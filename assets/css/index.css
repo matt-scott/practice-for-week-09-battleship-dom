@@ -1,1 +1,41 @@
-/* Your code here */
+/* Site container */
+.site-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Board container */
+.board-container {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-template-rows: repeat(9, 40px);
+    gap: 4px;
+}
+
+/* grid cell regular */
+.grid-cell {
+    border: 1px solid black;
+    min-height: 40px;
+    min-width: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+/* grid cell green (hit) */
+.grid-cell[data-color="green"] {
+    background-color: green;
+}
+
+/* grid cell red (miss) */
+.grid-cell[data-color="red"] {
+        background-color: red;
+}
+
+.reset-button {
+    margin: 0px 0px 10px 0px;
+}

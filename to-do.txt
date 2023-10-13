@@ -1,0 +1,3 @@
+each square is a div
+contain within board div to create div grid (9x9)
+
